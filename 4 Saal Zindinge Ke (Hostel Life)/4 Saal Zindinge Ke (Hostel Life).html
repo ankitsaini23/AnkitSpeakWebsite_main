@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #000000, #b22222); /* Black to red gradient */
+            color: white;
+            text-align: center;
+            transition: background 1s ease-in-out;
+        }
+
+        .button-container, .sub-button-container {
+            margin-top: 20px;
+        }
+
+        .btn, .sub-btn {
+            background-color: #b22222; /* Red color */
+            color: #ffffff;
+            font-size: 1.2em;
+            padding: 15px 30px;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover, .sub-btn:hover {
+            background-color: #000000; /* Black color on hover */
+            color: #ffffff;
+        }
+
+        .chapter-content, .sub-chapter-content {
+            display: none;
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #333333; /* Dark grey background for content */
+            border-radius: 10px;
+        }
+
+        .chapter-content.active, .sub-chapter-content.active {
+            display: block;
+        }
+
+        /* Image styling */
+        .cover-image {
+            width: 100%;
+            max-width: 500px;
+            margin: 50px auto;
+            border-radius: 10px;
+        }
+        #hostelIMG{
+            position: relative;
+            left:auto;
+            height: 60vh;
+            width: auto
+        
+        }
+        p{
+            font-size: x-large;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Add the image -->
+    <img src="img/hostel.png" alt="Hostel Life" class="cover-image">
+
+    <div class="button-container">
+        <button class="btn" onclick="showChapter('year1')">Year 1</button>
+        <button class="btn" onclick="showChapter('year2')">Year 2</button>
+        <button class="btn" onclick="showChapter('year3')">Year 3</button>
+        <button class="btn" onclick="showChapter('year4')">Year 4</button>
+    </div>
+
+    <!-- Year 1 -->
+    <div id="year1" class="chapter-content">
+        <h2>Year 1: The Beginning</h2>
+        
+        
+        <div class="sub-button-container">
+            <button class="sub-btn" onclick="showSubChapter('A New Chapter Begin')">A New Chapter Begin</button>
+            <button class="sub-btn" onclick="showSubChapter('Room Story – The Memories We Made1')">Mess Food – The Ultimate Survival Challenge </button>
+            <button class="sub-btn" onclick="showSubChapter('Mess Food – The Ultimate Survival Challenge')">other story </button>
+         </div>
+
+        <div id="A New Chapter Begin" class="sub-chapter-content">
+            <h3>Mess Story</h3>
+            <p>oh kya hum bhi chal diye…
+                Ghar chhod kar, ek naya safar shuru karne.
+                
+                Sapna toh IIT, MNIT ka dekha tha, par zindagi hume GIT le aayi.
+                Chalo, koi na, chalta hai! 😅
+            </p>
+
+            <img id="hostelIMG" src="img/gate.png" width="750px" height="750px" alt="">
+                 
+            <p>  
+                🚶‍♂️ Hostel H-7 ke samne khade hue, ek ajeeb si shanti thi…
+                Na koi awaaz, na koi doston ka shor…
+                Bas ek ajeeb sa ehsaas—naya shahar, naye log, naye rules.
+                
+                Fir mila hamara room no. 7005—yeh ek naya ghar banne wala tha.
+                Room ke andar gaye, toh dekha teen beds, teen almirah aur ek naya chapter!
+                
+                Phir aaye do aur roommates…
+                Baat hui, hasi-mazaak chala,
+                Aur ek hi din me samajh aa gaya—
+                "In dono ka bhi haal mera jaisa hi hai!" 🤣
+                
+                Aur bas, pehla din khatam!
+                Soch kar so gaye—"Jo bhi ho, ab toh yahi jeena hai!" 😴
+
+                Dusra din aaya...
+Subah uth kar socha ki aaj kuch productive karenge. Par zindagi ke plans aur hamare plans kabhi match nahi hote! 🤣
+
+Room me baithe-baithe Reels scroll kar rahe the, mann me chal raha tha—"College life me mazza tabhi hai jab doston ka ek strong group ho."
+Lekin abhi tak toh sirf bed, almirah aur fan hi apne lag rahe the.
+
+📢 Tabhi, darwaza khula!
+Teen ladke aaye…
+Hamne socha—"Chalo, naye dost banane ka time aa gaya!"
+
+Baat-chit shuru hui, naam pucha, hometown pucha…
+Ladke kaafi patle-se the, pehle laga ki hamare jaise naye honge.
+Phir ekdum shanti! 😶
+Halka awkward silence…
+
+Aur tabhi bomb phoota—
+"Hum tumhare seniors hain, 2nd year ke!" 😵
+
+Fir kya, ekdum khade karwa diya,
+Naam, kaha se aaye ho, course kya hai—sab poocha!
+Aur ek solid dialogue maara—
+"Isse pehle yeh room hamara tha, dhyan rakhna!"
+
+Ye sunke andar se laga—"Bas ab ragging shuru!" 😨
+Lekin nahi, sirf introduction leke nikal gaye…
+Phir bhi ek ajeeb sa tension chhod gaye!
+
+Hamne socha—"Hostel life me yeh sab bhi hota hai bhai!"
+Aur bas, phir se Reels scroll karne lage… 😅
+                
+                </p>
+        </div>
+
+        <div id="Room Story – The Memories We Made" class="sub-chapter-content">
+            <h3>Room Story</h3>
+            <p>The Room That Never Slept</p>
+        </div>
+
+        <div id="Mess Food – The Ultimate Survival Challenge" class="sub-chapter-content">
+            <h3>Other Story</h3>
+            <p>the best way to die</p>
+        </div>
+        
+         </div id="other-story" class="sub-chapter-content">
+             <!-- <h3>other story</h3> -->
+             <!-- <p>Any other interesting story from Year 1</p> -->
+        </div>
+
+
+    
+    </div>
+
+    <!-- Year 2 -->
+    <div id="year2" class="chapter-content">
+        <h2>Year 2: Settling In</h2>
+        <p>Write about your second year—how you started feeling more at home.</p>
+
+        <div class="sub-button-container">
+            <button class="sub-btn" onclick="showSubChapter('mess-story-2')">Mess Story</button>
+            <button class="sub-btn" onclick="showSubChapter('room-story-2')">Room Story</button>
+            <button class="sub-btn" onclick="showSubChapter('other-story-2')">Other Story</button>
+        </div>
+
+        <div id="mess-story-2" class="sub-chapter-content">
+            <h3>Mess Story</h3>
+            <p>Write about any funny or interesting mess experiences.</p>
+        </div>
+
+        <div id="room-story-2" class="sub-chapter-content">
+            <h3>Room Story</h3>
+            <p>Describe your hostel room, new roommates, or changes from Year 1.</p>
+        </div>
+
+        <div id="other-story-2" class="sub-chapter-content">
+            <h3>Other Story</h3>
+            <p>Any other interesting event or story.</p>
+        </div>
+    </div>
+
+    <!-- Year 3 -->
+    <div id="year3" class="chapter-content">
+        <h2>Year 3: The Fun Times</h2>
+        <p>Write about the fun moments of year 3—crazy events, late-night talks.</p>
+
+        <div class="sub-button-container">
+            <button class="sub-btn" onclick="showSubChapter('mess-story-3')">Mess Story</button>
+            <button class="sub-btn" onclick="showSubChapter('room-story-3')">Room Story</button>
+            <button class="sub-btn" onclick="showSubChapter('other-story-3')">Other Story</button>
+        </div>
+
+        <div id="mess-story-3" class="sub-chapter-content">
+            <h3>Mess Story</h3>
+            <p>Year 3 mess stories.</p>
+        </div>
+
+        <div id="room-story-3" class="sub-chapter-content">
+            <h3>Room Story</h3>
+            <p>Year 3 room experiences.</p>
+        </div>
+
+        <div id="other-story-3" class="sub-chapter-content">
+            <h3>Other Story</h3>
+            <p>Any other fun story.</p>
+        </div>
+    </div>
+
+    <!-- Year 4 -->
+    <div id="year4" class="chapter-content">
+        <h2>Year 4: The Final Chapter</h2>
+        <p>Write about your final year in the hostel, the bittersweet goodbyes.</p>
+
+        <div class="sub-button-container">
+            <button class="sub-btn" onclick="showSubChapter('mess-story-4')">Mess Story</button>
+            <button class="sub-btn" onclick="showSubChapter('room-story-4')">Room Story</button>
+            <button class="sub-btn" onclick="showSubChapter('other-story-4')">Other Story</button>
+        </div>
+
+        <div id="mess-story-4" class="sub-chapter-content">
+            <h3>Mess Story</h3>
+            <p>Year 4 mess experiences.</p>
+        </div>
+
+        <div id="room-story-4" class="sub-chapter-content">
+            <h3>Room Story</h3>
+            <p>Year 4 room memories.</p>
+        </div>
+
+        <div id="other-story-4" class="sub-chapter-content">
+            <h3>Other Story</h3>
+            <p>Any final year hostel story.</p>
+        </div>
+    </div>
+
+    <script>
+        function showChapter(year) {
+            document.querySelectorAll('.chapter-content').forEach(chapter => chapter.classList.remove('active'));
+            document.getElementById(year).classList.add('active');
+        }
+
+        function showSubChapter(storyId) {
+            document.querySelectorAll('.sub-chapter-content').forEach(content => content.classList.remove('active'));
+            document.getElementById(storyId).classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
+
+
